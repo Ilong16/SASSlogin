@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+  body {
+  background-color:black;
+}
+
+.correct{
+
+}
+</style>
+</head>
+<body translate="no">
+<center><input id=password class="correct" data-correct="example"></center>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script id="rendered-js">
+      console.clear();
+$("#password").change(inputChange);
+
+function inputChange(e) {
+  correct = $(this).data("correct");
+  userInput = $(this).val();
+  if (correct == userInput){
+    window.location.replace("https://ilong16.github.io/SASS/");
+  }
+  else {
+    
+  }
+}
+    </script>
+</body>
+</html>
